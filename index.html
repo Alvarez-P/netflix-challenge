@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix México" />
+    <link rel="icon" href="./img/netflix-logo.ico">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="./js/index.js"></script>
+    <title>Netflix México</title>
+</head>
+
+<body>
+
+    <!----------------------------------------
+                    HEADER 
+    ------------------------------------------>
+    <header>
+        <div class="divHeader">
+            <div class="divLogin">
+                <button class="btnBase">Iniciar Sesion</button>
+            </div>
+            <div class="divHeaderContent">
+                <div>
+                    <figure>
+                        <img src="./img/netflix-logo.png" alt="" />
+                    </figure>
+                </div>
+                <div class="divHeaderText">
+                    <h1>Tu próxima historia, ahora</h1>
+                    <h2>Disfruta Donde Quieras, Cancela Donde Quieras</h2>
+                </div>
+                <button class="btnBase btnIcon">
+                    <span>UNIRTE AHORA</span><img src="./img/arrow-circle.svg"></img>
+                </button>
+            </div>
+        </div>
+        <nav role='navigation'>
+            <div id="navHome" class="navItem onActive" onclick="toHome()">
+                <figure>
+                    <img src="./img/cancel.svg" width="50px">
+                </figure>
+                <p>Sin compromisos, cancela online cuando quieras</p>
+            </div>
+            <div id="navDevices" class="navItem" onclick="toDevices()">
+                <figure>
+                    <img src="./img/devices.svg">
+                </figure>
+                <p>Ve desde donde quieras</p>
+            </div>
+            <div id="navPrices" class="navItem" onclick="toPrices()">
+                <figure>
+                    <img src="./img/price.svg">
+                </figure>
+                <p>Elige tu precio</p>
+            </div>
+        </nav>
+    </header>
+    <div class="divTwitter">
+        <a href="#"><img src="./img/twitter.png" alt=""></a>
+    </div>
+
+    <!----------------------------------------
+                    HOME 
+    ------------------------------------------>
+    <section class="sectionHome" id="sectionHome">
+        <div class="divHomeContentItem">
+            <p>Si Piensas Que Netflix No Es Lo Tuyo, No Hay Problema. Sin Compromisos, Cancela Online Cuando Quieras.
+            </p>
+            <button class="btnBase btnIcon">
+                <span>UNIRTE AHORA</span><img src="./img/arrow-circle.svg"></img>
+            </button>
+        </div>
+        <div class="divHomeContentItem">
+            <figure>
+                <img src="./img/cancel-devices.png" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <!-----------------------------------------
+                    DEVICES 
+    ------------------------------------------>
+    <section class="sectionDevices" id="sectionDevices" style="display: none;">
+        <div class="divDevicesHead">
+            <p>
+                Ve Películas Y Programas De TV Cuando Y Donde Quieras, Personalizados Para Ti.
+            </p>
+            <button class="btnBase btnIcon">
+                <span>UNIRTE AHORA</span><img src="./img/arrow-circle.svg"></img>
+            </button>
+        </div>
+        <div class="divDevicesList">
+            <div class="divDevicesItem">
+                <figure>
+                    <img src="./img/netflix-tv.png" alt="">
+                </figure>
+                <p class="pDeviceItemTitle">Ve Netflix en tu TV</p>
+                <p class="pDeviceItemDesc">Smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y
+                    más.</p>
+            </div>
+            <div class="divDevicesItem">
+                <figure>
+                    <img src="./img/netflix-devices.png" alt="">
+                </figure>
+                <p class="pDeviceItemTitle">Disfruta Al Instante O Descarga Videos Para Más Tarde</p>
+                <p class="pDeviceItemDesc">Disponible en tu teléfono o tablet, vayas donde vayas</p>
+            </div>
+            <div class="divDevicesItem">
+                <figure>
+                    <img src="./img/netflix-laptop.png" alt="">
+                </figure>
+                <p class="pDeviceItemTitle">Usa cualquier computadora</p>
+                <p class="pDeviceItemDesc">Ve directamente en Netflix.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------
+                    PRICES 
+    ------------------------------------------>
+    <section class="sectionPrices" id="sectionPrices" style="display: none;">
+        <div class="divPricesHead">
+            <p>
+                Elige Un Plan Y Ve Lo Que Quieras En Netflix.
+            </p>
+            <button class="btnBase btnIcon">
+                <span>UNIRTE AHORA</span><img src="./img/arrow-circle.svg"></img>
+            </button>
+        </div>
+        <div class="divPricesTable">
+            <table class="tablePrices">
+                <tr>
+                    <th></th>
+                    <th>BÁSICO</th>
+                    <th>ESTÁNDAR</th>
+                    <th>PREMIUM</th>
+                </tr>
+                <tr>
+                    <td class="tdLeftText">Precio mensual</td>
+                    <td>$109</td>
+                    <td>$149</td>
+                    <td>$199</td>
+                </tr>
+                <tr class="grayBackground">
+                    <td class="tdLeftText">HD disponible</td>
+                    <td><img src="./img/delete.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="tdLeftText">Ultra HD disponible</td>
+                    <td><img src="./img/delete.png" alt=""></td>
+                    <td><img src="./img/delete.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+                <tr class="grayBackground">
+                    <td class="tdLeftText">Pantallas en las que se pueden ser al mismo tiempo</td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="tdLeftText">Ve en tu laptop, TV, teléfono y táblet</td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+                <tr class="grayBackground">
+                    <td class="tdLeftText">Películas y programas de TV ilimitados</td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="tdLeftText">Cancela en cualquier momento</td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                    <td><img src="./img/check-mark.png" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-----------------------------------------
+                    FOOTER 
+    ------------------------------------------>
+    <footer>
+        <div class="divFooterTitle">
+            <p>¿Preguntas? Llama al 01800-265-0161</p>
+        </div>
+        <div class="divFooterColumns">
+            <div class="divFooterColItems">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con inversionistas</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Información corporativa</a>
+                <a href="#">Originales de Netflix</a>
+            </div>
+            <div class="divFooterColItems">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con inversionistas</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Información corporativa</a>
+                <a href="#">Originales de Netflix</a>
+            </div>
+            <div class="divFooterColItems">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con inversionistas</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Información corporativa</a>
+                <a href="#">Originales de Netflix</a>
+            </div>
+        </div>
+        <div class="divFooterLanguage">
+            <button class="btnLanguage"><img src="./img/globe-solid.svg" alt="">Español</button>
+            <a href="#">Netflix México</a>
+        </div>
+    </footer>
+</body>
+
+</html>
